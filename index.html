@@ -1,0 +1,23 @@
+<p>PowerDNS Authoritative Server</p>
+<p>Domain: devnull.my.id</p>
+<p id="serverIpv4">Fetching server's IP address...</p>
+<p>Created By: Arman Dwi Pangestu A.K.A devnull</p>
+
+<script>
+    fetch(window.location.href)
+        .then((response) => {
+            const serverIP = response.headers.get("X-Server-IP");
+            if (serverIP) {
+                document.getElementById("serverIpv4").textContent =
+                    "Server's Public IPv4 Address: " + serverIP;
+            } else {
+                document.getElementById("serverIpv4").textContent =
+                    "Server IP header not found.";
+            }
+        })
+        .catch((error) => {
+            console.error("Error fetching server IP:", error);
+            document.getElementById("serverIpv4").textContent =
+                "Failed to fetch server IP.";
+        });
+</script>
