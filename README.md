@@ -121,7 +121,7 @@ gmysql-password=secretpassword
 gmysql-dnssec=yes
 
 local-address=0.0.0.0
-local-port=5300
+local-port=53
 
 # API
 api=yes
