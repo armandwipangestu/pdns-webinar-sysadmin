@@ -137,7 +137,7 @@ webserver-loglevel=none
 
 daemon=yes
 guardian=yes
-default-soa-content=ns1.your-domain.com your-name.your-domain.com 0 3600 600 1209600 3600
+default-soa-content=ns1.devnull.my.id your-name.devnull.my.id 0 3600 600 1209600 3600
 log-dns-details=yes
 log-dns-queries=yes
 loglevel=5
@@ -193,7 +193,7 @@ sudo ss -alnp4 | grep pdns
 -   Membuat DNS zone baru
 
 ```bash
-pdnsutil create-zone your-domain.com
+pdnsutil create-zone devnull.my.id
 ```
 
 ![11](assets/11.png)
@@ -201,16 +201,16 @@ pdnsutil create-zone your-domain.com
 -   Menambahkan record pada zone yang baru dibuat
 
 ```bash
-pdnsutil edit-zone your-domain.com
+pdnsutil edit-zone devnull.my.id
 ```
 
 ```bash
-your-domain.com   3600    IN      SOA     ns1.your-domain.com your-name.your-domain.com 1 10800 3600 604800 3600
-your-domain.com   86400   IN      NS      ns1.your-domain.com.
-your-domain.com   86400   IN      NS      ns2.your-domain.com.
-your-domain.com   3600    IN      A       34.101.90.211
-ns1.your-domain.com       172800  IN      A       34.101.90.211
-ns2.your-domain.com       172800  IN      A       34.101.90.211
+devnull.my.id   3600    IN      SOA     ns1.devnull.my.id your-name.devnull.my.id 1 10800 3600 604800 3600
+devnull.my.id   86400   IN      NS      ns1.devnull.my.id.
+devnull.my.id   86400   IN      NS      ns2.devnull.my.id.
+devnull.my.id   3600    IN      A       34.101.90.211
+ns1.devnull.my.id       172800  IN      A       34.101.90.211
+ns2.devnull.my.id       172800  IN      A       34.101.90.211
 ```
 
 ![12](assets/12.png)
