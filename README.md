@@ -137,7 +137,7 @@ webserver-loglevel=none
 
 daemon=yes
 guardian=yes
-default-soa-content=ns1.your-domain.com arman.your-domain.com 0 3600 600 1209600 3600
+default-soa-content=ns1.your-domain.com your-name.your-domain.com 0 3600 600 1209600 3600
 log-dns-details=yes
 log-dns-queries=yes
 loglevel=5
@@ -205,7 +205,7 @@ pdnsutil edit-zone your-domain.com
 ```
 
 ```bash
-your-domain.com   3600    IN      SOA     ns1.your-domain.com arman.your-domain.com 1 10800 3600 604800 3600
+your-domain.com   3600    IN      SOA     ns1.your-domain.com your-name.your-domain.com 1 10800 3600 604800 3600
 your-domain.com   86400   IN      NS      ns1.your-domain.com.
 your-domain.com   86400   IN      NS      ns2.your-domain.com.
 your-domain.com   3600    IN      A       34.101.90.211
