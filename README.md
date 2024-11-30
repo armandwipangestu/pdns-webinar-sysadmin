@@ -2,7 +2,7 @@
 
 <img src="assets/banner.png" alt="Banner">
 
-<p align="center">Repository ini adalah panduan untuk membangun DNS Authoritative Server menggunakan PowerDNS pada Webinar SysAdmin yang diadakan pada tanggal 16 bulan November tahun 2024.</p>
+<p align="center">Repository ini adalah panduan untuk membangun DNS Authoritative Server menggunakan PowerDNS pada Webinar SysAdmin yang diadakan pada tanggal 30 bulan November tahun 2024.</p>
 
 ## Daftar Isi
 
